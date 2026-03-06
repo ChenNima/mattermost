@@ -164,3 +164,10 @@ docker-compose.override.yaml
 **/CLAUDE.md
 .cursorrules
 .cursor/
+
+# CDK
+default_deploy.sh
+cdk/cdk.out/
+cdk/cdk.context.json
+cdk/dist/
+cdk/node_modules/

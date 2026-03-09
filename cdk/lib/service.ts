@@ -88,8 +88,8 @@ export class Service extends Construct {
 
     // Task definition
     const taskDefinition = new ecs.FargateTaskDefinition(this, 'TaskDefinition', {
-      cpu: props.taskCpu ?? 1024,
-      memoryLimitMiB: props.taskMemoryMiB ?? 2048,
+      cpu: props.taskCpu ?? 2048,
+      memoryLimitMiB: props.taskMemoryMiB ?? 8192,
       executionRole: taskExecutionRole,
       taskRole: taskRole,
     });
